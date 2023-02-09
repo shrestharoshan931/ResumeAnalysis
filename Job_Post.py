@@ -7,7 +7,6 @@ import docx2txt
 from database import mongo
 from datetime import datetime
 import pickle
-
 job_post = Blueprint("Job_post", __name__, static_folder="static", template_folder="templates")
 
 UF = "static/Job_Description"
