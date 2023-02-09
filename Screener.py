@@ -1,20 +1,12 @@
-import sys
 import numpy as np
-import tensorflow as tf
 from tensorflow import keras
-from keras.preprocessing.text import Tokenizer
-from keras_preprocessing.sequence import pad_sequences
-import nltk
+from keras.utils import pad_sequences
 from nltk.corpus import stopwords
-# nltk.download('stopwords')
-# nltk.download('punkt')
 from nltk.tokenize import word_tokenize
-import string
 import re
 import json
 import pickle
-import os
-import sys, fitz
+
 
 
 class resumeScreener:

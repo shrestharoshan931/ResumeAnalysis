@@ -38,7 +38,7 @@ resumeFetchedData = mongo.db.resumeFetchedData
 Ranked_resume = mongo.db.Ranked_resume
 IRS_USERS = mongo.db.IRS_USERS
 JOBS = mongo.db.JOBS
-from Job_post import job_post
+from Job_Post import job_post
 
 app.register_blueprint(job_post, url_prefix="/HR1")
 extractorObj = pickle.load(open("resumeExtractor.pkl", "rb"))
