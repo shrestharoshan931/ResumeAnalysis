@@ -7,7 +7,7 @@
 {% endblock %}
 {% block content %}
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
         <script>var $j = jQuery.noConflict();</script>
         <style>
             @media screen and (max-width: 560px) {
@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row">
             <h2>{{errorMsg}}</h2>
-
+            
             <div class='col-xs-12'>
                 <form class="form-horizontal" action="/empSearch" method='POST'>
                     <div class='form-floating mb-3 categoryInput1'>
@@ -48,7 +48,7 @@
         </div>
         <div class="row">
             <div class='col-xs-12  table-responsive-sm'>
-
+                
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -69,7 +69,7 @@
                     {% endfor %}
                 </tbody>
             </table>
-
+            
             </div>
         </div>
     </div>
@@ -92,13 +92,13 @@
         </table>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>      
         </div>
         </div>
     </div>
     </div>
 
-<script>
+<script>       
     $(document).on('click', '.view_data', function(){
     var employee_id = $(this).attr("id");
     $j.ajax({
@@ -111,9 +111,9 @@
         $('#view_mobile').val(data.mobile);
         $('#view_skills').val(data.skills);
         $('#view_education').val(data.education);
-        }
+        }   
     });
     });
-</script>
+</script>  
 
 {% endblock %}
