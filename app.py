@@ -3,9 +3,6 @@ from database import mongo
 from werkzeug.utils import secure_filename
 import os
 import pickle
-from resumeExtraction import resumeExtraction
-import sys, fitz
-from resumeScreener import resumeScreener
 from bson.objectid import ObjectId
 from google.oauth2 import id_token
 from google_auth_oauthlib.flow import Flow
