@@ -4,7 +4,7 @@ import re
 import pandas as pd
 import sys, fitz
 import nltk
-# nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 import pymongo
 from pymongo import MongoClient
